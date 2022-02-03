@@ -1,0 +1,12 @@
+<blui-user-menu avatarValue="AV" [(open)]="open">
+    <mat-nav-list blui-menu-body [style.paddingTop.px]="0">
+        <blui-info-list-item [dense]="true" (click)="changePassword()">
+            <mat-icon blui-icon>lock_open</mat-icon>
+            <div blui-title>Change Password</div>
+        </blui-info-list-item>
+        <blui-info-list-item [dense]="true" (click)="logout()">
+            <mat-icon blui-icon>login</mat-icon>
+            <div blui-title>Log Out</div>
+        </blui-info-list-item>
+    </mat-nav-list>
+</blui-user-menu>
